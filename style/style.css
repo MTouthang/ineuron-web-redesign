@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Noto Sans;
+}
+
+a {
+   
+    text-decoration: none;
+}
+
+/******* Header section ******/
+.logo {
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+
+    margin-top: 8px;
+}
+header {
+    display: flex;
+    z-index: 2;
+    position: sticky;
+    top: 0;
+ 
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    box-shadow: 0px 0.1px 3px #C5CACD;
+    background-color: #fff;
+}
+
+nav {
+    /* border: 1px solid; */
+}
+
+.nav-items {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.angle-logo{
+    margin-left: -5px;
+}
+.course{
+    display: none;
+}
+.nav-item {
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #283278; 
+}
+.nav-item > a:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.input-search {
+    border: 1px solid;
+}
+
+.input-search > input {
+    border: none;
+}
+
+/****** sub-menu open *****/
+.nav ul li:hover .course {  
+    padding: 20px 5px; 
+    display: block;
+    position:absolute;
+    background-color: #eee;
+}
+
+.data-science:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.big-data:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+.web-dev:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.course > ul li{
+    list-style-type: none;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+.course1-sub {
+    display: none;
+}
+/****** sub menu 1 ********/
+.course1:hover .course1-sub {
+    border-left: 1px solid;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #eee;
+}
+.course1-sub{
+    width: 130%;
+    padding: 20px 10px;
+    text-align: start;
+}
+.course1-sub > ul li {
+    font-size: 14px;
+
+}
+.course1-sub > ul li:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.course2-sub {
+    display: none;
+}
+.course2-sub {
+    width: 130%;
+    padding: 20px 10px;
+    text-align: start;
+}
+
+/*** sub menu 2 open **/
+.course2:hover .course2-sub{
+    border-left: 1px solid;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #eee;
+}
+.course2-sub > ul li:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/**** sub menu 3 ****/
+.course3-sub {
+    display: none;
+}
+.course3:hover .course3-sub {
+    border-left: 1px solid;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #eee;
+}
+.course3-sub {
+    width: 130%;
+    padding: 20px 10px;
+    text-align: start;
+}
+.course3-sub > ul li:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/***** company nav bar part *****/
+.company-sub {
+    display: none;
+}
+.company:hover .company-sub{
+    display: block;
+    text-transform: uppercase;
+    position: absolute;
+}
+.company-sub > table{
+    background-color: #eee;
+    border-spacing: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+td {
+    cursor: pointer;
+}
+td:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/****** search bar input ********/
+.input-search {
+    border: 1px solid #C5CACD;
+    padding: 0px 40px;
+    border-radius: 6px;
+    display: flex;
+   
+}
+.input-icon {
+    margin-left: -20px;
+    margin-right: 5px;
+}
+.search-input {
+    outline: none;
+    padding: 10px 0px;
+    font-size: 16px;
+}
+
+/****** Button login and signup *****/
+.login-btn{
+    padding: 10px 10px;
+    margin-bottom: 2px;
+    border-radius: 6px;
+    border:none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    font-family: Noto Sans;
+}
+
+.login-btn:hover {
+    box-shadow: 0px 0px 8px #000;
+    
+}
+
+.signup-btn{
+    padding: 10px 10px;
+    margin-bottom: 2px;
+    border-radius: 6px;
+    border:none;
+    background-color: #8B3DFF;
+    font-weight: bold;
+    font-size: 16px;
+    
+}
+
+.signup-btn > a{
+    color:#fff;
+}
+
+.signup-btn:hover {
+    box-shadow: 0px 0px 8px #000;   
+}
+
+/**********
+***********
+********* main *******
+***********
+********/
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/******typo section ******/
+.heading {
+    padding-bottom: 50px;
+}
+.heading > h1 {
+    padding-bottom: 20px;
+    font-size: 48px;
+    color: #283278;
+}
+.typo-section {
+    margin: 60px 0px;
+    text-align: center;
+}
+
+.heading > p {
+    font-size: 21px;
+}
+
+.heading > button {
+    margin-top: 15px;
+    padding: 10px 30px;
+    border: none;
+    color: #fff;
+    background-color: #8B3DFF;
+    font-family: Noto Sans;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.heading > button:hover{
+    box-shadow: 0px 0px 8px #000;
+}
+
+/******* image section *******/
+.imgs {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 6%;
+}
+.left-programming{
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 10%;
+    bottom: -30%;
+}
+.right-programming{
+    width: 120px;
+    height: auto;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+}
+.tech-avengers {
+    width: 700px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px #000;
+
+}
+.tech-avengers > h3 {
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    color: #551A8B;
+    
+}
+.tech-avengers > img {
+    width: 700px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 1px solid #C5CACD;
+    
+}
+.learn-job-ready > img{
+    width: 150px;
+    margin-bottom: -5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.learn-job-ready > h3 {
+    padding: 6px 0px;
+    padding-left: 10px;
+    color:#551A8B;
+    text-transform: uppercase;
+    font-size: 14px;
+    background-color: #F0F0F0;
+    border-radius: 10px;
+}
+
+.learn-job-ready { 
+    width: 150px;
+
+    border-radius: 10px; 
+    box-shadow: 0px 0px 5px #000;
+    position: absolute;
+    background-color: #F0F0F0;
+    top: -80px;
+    left: 0;
+}
+.hackathon > img {
+    width: 150px;
+    height: 100px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: -5px;
+}
+.hackathon {
+    box-shadow: 0px 0px 5px #000;
+    position: absolute;
+    right: 5%;
+    bottom: -8%;
+    border-radius: 10px;
+    background-color: #F0F0F0;
+}
+.hackathon > h3 {
+    font-size: 14px ;
+    padding: 5px 10px;
+    color: #551A8B;
+}
+
+/*********** pure hard work section ********/
+#pure-hard-work {
+    
+    background-color: #F0F0F0;
+    text-align: center;
+    margin-top: 5%;
+    padding: 4% 0;
+}
+#pure-hard-work > h2 {
+    padding: 20px;
+    font-size: 32px;
+    color: #283278;
+}
+
+.hardwork-sub-section> img {
+    width: 200px;
+    height: 150px 
+}
+.hardwork-sub-section > h2 {
+    background-color: #8B3DFF;
+    font-weight: bold;
+    width: 60%;
+    margin: 5px auto;
+    border-radius: 6px;
+    color: #fff;
+    padding: 5px 1px;
+}
+.hardwork-sub-section {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #283278;
+}
+.sub-pure-hard-work {
+    display: flex;
+    justify-content: space-around;
+}
+
+/******* achiever ********/
+#achiever {
+    padding: 30px 0px;
+    border-bottom: 3px solid #eee;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 6%;
+}
+
+.achiever-typo > h2 {
+    padding: 30px 90px 10px 5px;
+    color: #283278;
+    font-size: 48px;
+}
+.companies {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.company-item {
+    border: 3px solid #eee;
+    width: 150px;
+}
+.company-item > img {
+    width: 150px;
+    height: auto;
+}
+
+/************** Hall of fame ***********/
+#hall-of-fame {
+    display: flex;
+    justify-content: space-around;
+    padding: 4% 6%;
+    background-color: #F0F0F0;
+}
+
+.fame {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    
+}
+.fame-items {
+    border: 1px solid #eee;
+    margin: 5px 2px;
+    box-shadow: 0px 0px 5px #000;
+    position: relative;
+}
+
+.fame-items > img {
+    opacity: 1;
+    transition: .5s ease;
+  margin: 2px 2px;
+  width: 250px;
+  height: 250px;
+}
+
+
+.fame-items > h4 {
+    color: #283278;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.fame-items > p {
+    color: #8B3DFF;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+
+.fame-body {
+   display:none;
+   opacity: 0;
+  
+}
+.profile-img:hover .fame-body {
+    display: block;
+    
+   
+}
+
+.fame:hover .profile-img {
+    opacity: 0.3;
+}
+.fame:hover .fame-body {
+    display: block;
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color:#283278;
+}
+
+.fame-heading {
+
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.fame-heading > h3 {
+    font-size: 48px;
+    letter-spacing: 20px;
+    color: #283278;
+    padding-top: 25px;
+}
+
+.icon-linkedIn > img {
+    width: 20px;
+}
+.fame > a {
+    position: absolute;
+    float:inline-end;
+   
+}
+
+/****** course *********/
+#course {
+    
+   margin: 3% 6%;
+   text-align: center;
+   color: #283278;
+   
+}
+#course > h1 {
+    font-size: 32px;
+    padding-top: 20px;
+}
+
+.course-button > button {
+    width: 20%;
+    padding: 10px;
+    margin: 5px 2px ;
+    border: none;
+    border-radius: 10px;
+    background-color: #8B3DFF;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 0px 3px #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.course-button > button:hover {
+    box-shadow: 0px 0px 5px #000;
+}
+.course-section {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2%;
+    overflow: hidden;
+    text-align: start;
+}
+.course-items {
+    box-shadow: 0px 0px 5px #000;
+    margin: 5px 10px;
+}
+.course-items > img {
+    width: 250px;
+    height: 160px;
+}
+.course-items > h4, h5, span, p {
+    padding: 0px 10px;
+}
+
+.course-items > h4 {
+    padding-bottom: 10px;
+
+}
+.course-items > h5 {
+    font-weight: bold;
+    font-size: 16px;
+
+}
+.course-items > h6 {
+    background-color: #8B3DFF;
+    
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 6px;
+    width: 10%;
+    margin: 3px 0px 10px 10px;
+
+}
+
+/*****************Tech avenger *************/
+#tech-avg {
+   
+    background-color: #F0F0F0;
+    text-align: center;
+    padding: 6% 6%;
+    color: #283278;
+}
+#tech-avg > h1 {
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+.tech-avg-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.avg {
+   box-shadow: 0px 0px 5px #000;
+    margin-top: 4px;
+}
+.avg > img {
+    width: 190px;
+    height: 190px;
+}
+
+
+
+/***** footer ****/
+footer {
+    background-color: #CFD2CF;
+    text-align: center;
+    padding: 20px 0px;
+    color: #283278;
+}
+.f1 {
+    border-bottom: 1px solid #393E46;
+    padding: 10px 0px;
+}
+.social-link > img{
+    width: 20px;
+}
+.f2 {
+    padding: 10px 1px;
+    display: flex;
+    justify-content: space-around;
+}
+.f-table {
+    border-spacing: 20px;
+    text-align: start;
+}
+.dev {
+    padding: 10px 0px;
+}
